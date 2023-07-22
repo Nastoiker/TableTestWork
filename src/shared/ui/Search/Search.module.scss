@@ -1,0 +1,50 @@
+.searchinput {
+	margin-top: 23px;
+	margin-left: 78px;
+
+	form {
+		width: 631px;
+		height: 52px;
+
+		padding: 0 26px;
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		background-color: #5a5c66;
+
+		input {
+			width: 95%;
+
+			background-color: transparent;
+
+			border: none;
+			outline: none;
+
+			&::-moz-placeholder {
+				color: #b2b7bf;
+			}
+
+			&::-webkit-input-placeholder {
+				color: #b2b7bf;
+			}
+		}
+
+		button {
+			padding: 0;
+			height: 21px;
+
+			background-color: transparent;
+
+			border: none;
+			outline: none;
+
+			cursor: pointer;
+
+			&:active {
+				transform: scale(0.9);
+			}
+		}
+	}
+}

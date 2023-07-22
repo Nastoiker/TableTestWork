@@ -1,0 +1,56 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 15px 0 25px 0;
+
+  button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #474955;
+
+    cursor: pointer;
+
+    &.direction {
+      font-size: 24px;
+      font-weight: 500;
+
+      @media (max-width: 550px) {
+        font-size: 20px;
+      }
+    }
+
+    &.number {
+      font-size: 18px;
+      font-style: italic;
+      font-weight: 700;
+
+      @media (max-width: 550px) {
+        font-size: 14px;
+      }
+    }
+
+    &.active {
+      color: #7ebc3c;
+    }
+
+    &:disabled {
+      opacity: 0.65;
+      pointer-events: none;
+    }
+
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+
+  @media (max-width: 900px) {
+    padding: 0 55px;
+    margin: 10px 0 10px 0;
+  }
+
+  @media (max-width: 550px) {
+    padding: 0 10px;
+  }
+}

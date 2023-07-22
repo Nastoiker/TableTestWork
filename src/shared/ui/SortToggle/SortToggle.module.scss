@@ -1,0 +1,46 @@
+svg {
+  margin-left: 39px;
+
+  &.inverted {
+    transform: rotate(180deg);
+  }
+}
+th {
+    height: 54px;
+
+    padding: 0 0 0 125px;
+
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    text-align: start;
+
+    background-color: #474955;
+
+    cursor: pointer;
+
+    @media (max-width: 900px) {
+      padding: 0;
+
+      text-align: center;
+    }
+
+    &:first-child {
+      width: 10%;
+
+      padding: 0;
+
+      text-align: center;
+    }
+
+    &:last-child {
+      width: 45%;
+    }
+
+
+
+    &:active {
+      background-color: #525460;
+    }
+  }
